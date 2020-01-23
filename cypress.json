@@ -1,0 +1,6 @@
+{
+    "video": false,
+    "videosFolder": "cypress/videos",
+    "defaultCommandTimeout": 5000,
+    "screenshotsFolder": "cypress/screenshots"
+}
