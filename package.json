@@ -1,4 +1,12 @@
 {
+    "author": "https://www.linkedin.com/in/benyaminrafaeli/",
+    "description": "cloned and customized cypress bootstrap",
+    "scripts": {
+        "start": "npm run cy",
+        "cy": "./node_modules/.bin/cypress run",
+        "cy:headed": "./node_modules/.bin/cypress run --headed",
+        "cyxo": "npx cypress open"
+    },
     "devDependencies": {
         "cypress": "^3.8.2",
         "cypress-cucumber-preprocessor": "^2.0.1",
