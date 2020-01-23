@@ -20,10 +20,17 @@ Then(`I check the message {string}`, (message) => {
 
 Given(`I login as following`, dataTable => {
     dataTable.hashes().forEach(row => {
-        cy.get('#txtUsername').clear()
-        cy.get('#txtPassword').clear()
-        if (row.UserName) cy.get('#txtUsername').type(row.UserName)
-        if (row.Password) cy.get('#txtPassword').type(row.Password)
+        if (row.UserName) {
+            cy.get('#txtUsername').type(row.UserName)
+        } else {
+            cy.get('#txtUsername').clear()
+        }
+        if (row.Password) {
+            cy.get('#txtPassword').type(row.Password)
+        } else {
+            cy.get('#txtPassword').clear()
+        }
+
         cy.get('#btnLogin').click({ force: true })
         cy.get('#spanMessage').text().as(row.Message)
     });
