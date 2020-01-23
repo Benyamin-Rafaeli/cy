@@ -8,6 +8,7 @@ describe('Test opensourcecms', () => {
         cy.get('@user').then(user => { cy.login(user.UserName, user.Password) })
     })
 
+    // need to find way run specific test without before annotation
     it('Perform empty validation check', () => {
         // Long way of working with Promise (Closure)
         // cy.get('#txtUsername').then(el => { return el.text() }).as('Username');
