@@ -19,13 +19,12 @@ Then(`I check the message {string}`, (message) => {
 })
 
 Given(`I login as following`, dataTable => {
-    // cy.fixture('opensourcecms').as('user')
     dataTable.hashes().forEach(row => {
-        cy.get('#txtUsername').type(row.UserName)
-        cy.get('#txtPassword').type(row.Password)
+        cy.get('#txtUsername').clear()
+        cy.get('#txtPassword').clear()
+        if (row.UserName) cy.get('#txtUsername').type(row.UserName)
+        if (row.Password) cy.get('#txtPassword').type(row.Password)
+        cy.get('#btnLogin').click({ force: true })
+        cy.get('#spanMessage').text().as(row.Message)
     });
-    cy.get('#btnLogin').click({ force: true })
-    cy.get('#spanMessage').invoke('text').as(message)
 })
-
-// cy.get('#spanMessage').invoke('text').as('Username cannot be empty')

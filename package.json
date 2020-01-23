@@ -5,7 +5,7 @@
         "start": "npm run cy",
         "cy": "./node_modules/.bin/cypress run",
         "cy:headed": "./node_modules/.bin/cypress run --headed",
-        "cyxo": "npx cypress open"
+        "cyx": "npx cypress open"
     },
     "devDependencies": {
         "cypress": "^3.8.2",
@@ -14,5 +14,8 @@
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true
+    },
+    "dependencies": {
+        "cypress-commands": "^1.0.0"
     }
 }

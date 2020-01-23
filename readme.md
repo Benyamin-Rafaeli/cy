@@ -26,7 +26,7 @@ npm run cy
 Runner
 ----------
 ```sh
-npm run cyxo
+npm run cyx
 ```
 
 <!-- Run in Docker 
