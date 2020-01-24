@@ -6,8 +6,9 @@ Given(`I visit opensourcecms site`, () => {
 
 Given(`I check placeholder of {string} and {string}`, (UserName, Password) => {
     // Short way of working with Promise (invoke)
-    cy.get('#txtUsername').invoke('text').as(UserName) // Username real
-    cy.get('#txtPassword').invoke('text').as(Password) // Password real
+    cy.get('#txtUsername').text().as(UserName)
+    // cy.get('#txtUsername').invoke('text').as(UserName)
+    cy.get('#txtPassword').text().as(Password)
 })
 
 And(`I check text of {string} button and click`, (text) => {
@@ -15,7 +16,8 @@ And(`I check text of {string} button and click`, (text) => {
 })
 
 Then(`I check the message {string}`, (message) => {
-    cy.get('#spanMessage').invoke('text').as(message)
+    // cy.get('#spanMessage').invoke('text').as(message)
+    cy.get('#spanMessage').text().as(message)
 })
 
 Given(`I login as following`, dataTable => {

@@ -21,10 +21,8 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (userName, password) => {
-    // cy.get('#txtUsername').type(userName, { log: false })
     cy.get('#txtUsername').type(userName)
-    cy.get('#txtPassword').type(password)
-    // cy.get('#btnLogin').contains('LOGIN').click({ force: true })
+    cy.get('#txtPassword').type(password, { log: false }) // hide input value in log
     cy.get('#btnLogin').click({ force: true })
     cy.url().should('include', '/orangehrm/index.php')
 })
