@@ -17,6 +17,12 @@ Run headed
 npm run cy:headed
 ```
 
+Run Specific spec
+----------
+```sh
+npm run cy:headed --spec cypress/integration/examples/opensourcecms.spec.js
+```
+
 Run headless
 ----------
 ```sh
