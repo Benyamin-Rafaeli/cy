@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context('Utilities', () => {
+context.skip('Utilities', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/utilities')
   })
@@ -28,21 +28,21 @@ context('Utilities', () => {
   it('Cypress.Blob - blob utilities and base64 string conversion', () => {
     // https://on.cypress.io/blob
     cy.get('.utility-blob').then(($div) =>
-    // https://github.com/nolanlawson/blob-util#imgSrcToDataURL
-    // get the dataUrl string for the javascript-logo
+      // https://github.com/nolanlawson/blob-util#imgSrcToDataURL
+      // get the dataUrl string for the javascript-logo
       Cypress.Blob.imgSrcToDataURL('https://example.cypress.io/assets/img/javascript-logo.png', undefined, 'anonymous')
-      .then((dataUrl) => {
-        // create an <img> element and set its src to the dataUrl
-        let img = Cypress.$('<img />', { src: dataUrl })
+        .then((dataUrl) => {
+          // create an <img> element and set its src to the dataUrl
+          let img = Cypress.$('<img />', { src: dataUrl })
 
-        // need to explicitly return cy here since we are initially returning
-        // the Cypress.Blob.imgSrcToDataURL promise to our test
-        // append the image
-        $div.append(img)
+          // need to explicitly return cy here since we are initially returning
+          // the Cypress.Blob.imgSrcToDataURL promise to our test
+          // append the image
+          $div.append(img)
 
-        cy.get('.utility-blob img').click()
-          .should('have.attr', 'src', dataUrl)
-      }))
+          cy.get('.utility-blob img').click()
+            .should('have.attr', 'src', dataUrl)
+        }))
   })
 
   it('Cypress.minimatch - test out glob patterns against strings', () => {
@@ -107,7 +107,7 @@ context('Utilities', () => {
     /**
      * @return Bluebird<string>
      */
-    function waitOneSecond () {
+    function waitOneSecond() {
       // return a promise that resolves after 1 second
       // @ts-ignore TS2351 (new Cypress.Promise)
       return new Cypress.Promise((resolve, reject) => {
@@ -122,8 +122,8 @@ context('Utilities', () => {
     }
 
     cy.then(() =>
-    // return a promise to cy.then() that
-    // is awaited until it resolves
+      // return a promise to cy.then() that
+      // is awaited until it resolves
       // @ts-ignore TS7006
       waitOneSecond().then((str) => {
         expect(str).to.eq('foo')

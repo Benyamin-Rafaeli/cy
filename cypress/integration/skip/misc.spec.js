@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context('Misc', () => {
+context.skip('Misc', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/misc')
   })
@@ -68,8 +68,8 @@ context('Misc', () => {
         scale: false,
         disableTimersAndAnimations: true,
         screenshotOnRunFailure: true,
-        beforeScreenshot () { },
-        afterScreenshot () { },
+        beforeScreenshot() { },
+        afterScreenshot() { },
       })
     })
   })

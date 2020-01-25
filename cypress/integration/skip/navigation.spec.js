@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context('Navigation', () => {
+context.skip('Navigation', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io')
     cy.get('.navbar-nav').contains('Commands').click()
@@ -43,14 +43,14 @@ context('Navigation', () => {
     // Pass options to the visit
     cy.visit('https://example.cypress.io/commands/navigation', {
       timeout: 50000, // increase total time for the visit to resolve
-      onBeforeLoad (contentWindow) {
+      onBeforeLoad(contentWindow) {
         // contentWindow is the remote page's window object
         expect(typeof contentWindow === 'object').to.be.true
       },
-      onLoad (contentWindow) {
+      onLoad(contentWindow) {
         // contentWindow is the remote page's window object
         expect(typeof contentWindow === 'object').to.be.true
       },
     })
-    })
+  })
 })

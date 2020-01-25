@@ -2,7 +2,5 @@
     "video": false,
     "videosFolder": "cypress/videos",
     "screenshotsFolder": "cypress/screenshots",
-    "defaultCommandTimeout": 5000,
-    "ignoreTestFiles": "*.js",
-    "testFiles": "**/*.feature"
+    "defaultCommandTimeout": 5000
 }
