@@ -10,7 +10,8 @@
     "devDependencies": {
         "cypress": "^3.8.3",
         "cypress-cucumber-preprocessor": "^2.0.1",
-        "cypress-dark": "^1.7.14"
+        "cypress-dark": "^1.7.14",
+        "cypress-xpath": "^1.4.0"
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true

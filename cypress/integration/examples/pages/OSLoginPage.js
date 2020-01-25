@@ -4,7 +4,9 @@ export class OSLoginPage {
 
     performLogin(userName, password) {
         if (userName) {
-            cy.get('#txtUsername').type(userName)
+            // cy.get('#txtUsername').type(userName)
+            // this is example with xpath
+            cy.xpath('.//*[@id="txtUsername"]').type(userName)
         } else {
             cy.get('#txtUsername').clear()
         }
