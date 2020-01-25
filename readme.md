@@ -46,3 +46,9 @@ Rebuild Docker
 ```sh
 docker-compose -f docker-compose.yml up --build
 ```
+
+Cypress Dashboard and Parallel4
+----------
+```sh
+npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c --parallel
+```
