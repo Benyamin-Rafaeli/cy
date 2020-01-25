@@ -1,7 +1,7 @@
 Feature: opensourcecms feature
     Test opensourcecms
 
-    @focus
+    # @focus
     Scenario: Test login page placeholders
         Given I visit opensourcecms site
         And I check placeholder of 'Username'

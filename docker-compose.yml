@@ -1,0 +1,9 @@
+version: '3'
+services: 
+    e2e:
+        image: cypress
+        build: .
+        container_name: cy_docker
+        # command: npm run cy --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/Cucumber/opensourcecms.feature
+        # command: npm run cy --spec cypress/integration/examples/opensourcecms.spec.js
+        # command: npm run cy /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js

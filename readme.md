@@ -29,14 +29,20 @@ Run headless
 npm run cy
 ```
 
-Runner
+Runner Cypress
 ----------
 ```sh
 npm run cyx
 ```
 
-<!-- Run in Docker 
+Run in Docker 
 ----------
 ```sh
 docker-compose -f docker-compose.yml up
-``` -->
+```
+
+Rebuild Docker 
+----------
+```sh
+docker-compose -f docker-compose.yml up --build
+```
