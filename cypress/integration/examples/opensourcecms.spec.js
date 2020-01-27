@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 import { loginPage } from "/Users/benjamin/projects/private/cy/cypress/integration/examples/pages/OSLoginPage.js"
+import '@percy/cypress';
 
 const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login'
 
@@ -7,9 +8,11 @@ describe('Test opensourcecms', () => {
     beforeEach('Navigate to website', () => {
         cy.viewport(1200, 800)
         cy.visit(OSurl)
+        // cy.percySnapshot()
     })
 
     it('Test login page placeholders', () => {
+
         loginPage.checkPlaceHolder('Username')
         loginPage.checkPlaceHolder('Password')
     })
@@ -37,5 +40,5 @@ describe('Test opensourcecms', () => {
     //     cy.get('@user').then(user => { cy.login(user.UserName, user.Password) })
     //     cy.get('#option-menu').text().as('Welcome Admin')
     // })
-
+    // cy.percySnapshot('After')
 })

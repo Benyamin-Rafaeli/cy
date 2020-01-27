@@ -3,6 +3,7 @@
 context('Assertions', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/assertions')
+    // cy.percySnapshot()
   })
 
   describe('Implicit Assertions', () => {
@@ -165,4 +166,5 @@ context('Assertions', () => {
       assert.isObject(person, 'value is object')
     })
   })
+  // cy.percySnapshot()
 })

@@ -3,6 +3,7 @@
 context('Actions', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/actions')
+    // cy.percySnapshot()
   })
 
   // https://on.cypress.io/interacting-with-elements
@@ -187,7 +188,7 @@ context('Actions', () => {
     cy.get('.action-select').select('apples')
 
     cy.get('.action-select-multiple')
-    .select(['apples', 'oranges', 'bananas'])
+      .select(['apples', 'oranges', 'bananas'])
 
     // Select option(s) with matching value
     cy.get('.action-select').select('fr-bananas')
@@ -278,4 +279,5 @@ context('Actions', () => {
     // control the duration of the scroll (in ms)
     cy.get('#scrollable-both').scrollTo('center', { duration: 2000 })
   })
+  // cy.percySnapshot()
 })

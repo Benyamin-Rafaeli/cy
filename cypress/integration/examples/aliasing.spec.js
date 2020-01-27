@@ -3,6 +3,7 @@
 context('Aliasing', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/aliasing')
+    // cy.percySnapshot()
   })
 
   it('.as() - alias a DOM element for later use', () => {
@@ -39,4 +40,5 @@ context('Aliasing', () => {
     cy.wait('@getComment').its('status').should('eq', 200)
 
   })
+  // cy.percySnapshot()
 })

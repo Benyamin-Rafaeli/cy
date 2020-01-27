@@ -19,6 +19,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import '@percy/cypress';
 
 Cypress.Commands.add('login', (userName, password) => {
     cy.get('#txtUsername').type(userName)
