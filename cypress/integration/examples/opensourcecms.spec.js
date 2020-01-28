@@ -6,17 +6,19 @@ const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php
 
 describe('Test opensourcecms', () => {
     beforeEach('Navigate to website', () => {
-        cy.viewport(1200, 800)
+        // cy.viewport(1200, 800)
         cy.visit(OSurl)
-        // cy.percySnapshot()
     })
 
     it('Test login page placeholders', () => {
+        // cy.percySnapshot('Before')
         loginPage.checkPlaceHolder('Username')
         loginPage.checkPlaceHolder('Password')
+        // cy.percySnapshot('After')
     })
 
     it('Test login page all invalid permutations', () => {
+        // cy.percySnapshot('Before')
         loginPage.performLogin('admin', 'password')
         loginPage.clickLoginButton()
         loginPage.verifyUiLoginMessage('Invalid credentials')
@@ -32,6 +34,7 @@ describe('Test opensourcecms', () => {
         loginPage.performLogin('opensourcecms', '')
         loginPage.clickLoginButton()
         loginPage.verifyUiLoginMessage('Password cannot be empty')
+        // cy.percySnapshot('After')
     })
 
     // it('Perform login validation', () => {
@@ -39,5 +42,4 @@ describe('Test opensourcecms', () => {
     //     cy.get('@user').then(user => { cy.login(user.UserName, user.Password) })
     //     cy.get('#option-menu').text().as('Welcome Admin')
     // })
-    // cy.percySnapshot('After')
 })

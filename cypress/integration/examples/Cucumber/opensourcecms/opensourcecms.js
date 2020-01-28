@@ -5,6 +5,8 @@ const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php
 
 Given(`I visit opensourcecms site`, () => {
     cy.viewport(1200, 800)
+    // cy.viewport(Cypress.config('height'), Cypress.config('width'))
+    // cy.viewport(Cypress.config(screenSize))
     cy.visit(OSurl)
 })
 
