@@ -1,9 +1,13 @@
 {
-  "video": false,
+  "video": true,
   "videosFolder": "cypress/videos",
   "screenshotsFolder": "cypress/screenshots",
   "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 60000,
   "projectId": "4g6xfs",
   "ignoreTestFiles": "*.js_",
-  "testFiles": "**/*.js"
+  "testFiles": [
+    "**/**.spec.js",
+    "**/*.feature"
+  ]
 }

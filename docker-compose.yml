@@ -5,6 +5,9 @@ services:
         build: .
         container_name: cy_docker
         command: npm run cy
-        # command: npm run cy --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/Cucumber/opensourcecms.feature
-        # command: npm run cy --spec cypress/integration/examples/opensourcecms.spec.js
-        # command: npm run cy /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js
+        volumes: 
+            - /Users/benjamin/report:/app/cypress/videos
+            - /Users/benjamin/report:/app/cypress/screenshots
+
+
+            

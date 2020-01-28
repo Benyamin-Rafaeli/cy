@@ -1,5 +1,5 @@
 import { Given, And, Then } from 'cypress-cucumber-preprocessor/steps'
-import { loginPage } from "/Users/benjamin/projects/private/cy/cypress/integration/examples/pages/OSLoginPage.js"
+import { loginPage } from "../../pages/OSLoginPage.js"
 
 const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login'
 
