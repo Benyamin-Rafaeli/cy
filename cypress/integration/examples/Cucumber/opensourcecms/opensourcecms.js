@@ -1,13 +1,12 @@
 import { Given, And, Then } from 'cypress-cucumber-preprocessor/steps'
 import { loginPage } from "../../pages/OSLoginPage.js"
 
-const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login'
 
 Given(`I visit opensourcecms site`, () => {
     cy.viewport(1200, 800)
+    cy.visit('/', { retryOnStatusCodeFailure: true })
     // cy.viewport(Cypress.config('height'), Cypress.config('width'))
     // cy.viewport(Cypress.config(screenSize))
-    cy.visit(OSurl)
 })
 
 And(`I check placeholder of {string}`, field => loginPage.checkPlaceHolder(field))

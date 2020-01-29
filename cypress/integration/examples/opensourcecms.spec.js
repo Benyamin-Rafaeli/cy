@@ -2,12 +2,9 @@
 import { loginPage } from "./pages/OSLoginPage.js"
 import '@percy/cypress';
 
-const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login'
-
 describe('Test opensourcecms', () => {
     beforeEach('Navigate to website', () => {
-        cy.viewport(1200, 800)
-        // cy.visit(OSurl, {retryOnStatusCodeFailure: true})
+        cy.viewport(1200, 800)        
         cy.visit('/', {retryOnStatusCodeFailure: true})
     })
 
