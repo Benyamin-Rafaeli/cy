@@ -4,6 +4,8 @@ export class OSLoginPage {
 
     performLogin(userName, password) {
         if (userName) {
+            cy.get('#txtUsername').click()
+            cy.get('#txtUsername').should('have.focus')
             // cy.get('#txtUsername').type(userName)
             // this is example with xpath
             cy.xpath('.//*[@id="txtUsername"]').type(userName)
@@ -11,6 +13,8 @@ export class OSLoginPage {
             cy.get('#txtUsername').clear()
         }
         if (password) {
+            cy.get('#txtPassword').click()
+            cy.get('#txtPassword').should('have.focus')
             cy.get('#txtPassword').type(password)
         } else {
             cy.get('#txtPassword').clear()

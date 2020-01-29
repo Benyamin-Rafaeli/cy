@@ -6,8 +6,8 @@ const OSurl = 'https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php
 
 describe('Test opensourcecms', () => {
     beforeEach('Navigate to website', () => {
-        // cy.viewport(1200, 800)
-        cy.visit(OSurl)
+        cy.viewport(1200, 800)
+        cy.visit(OSurl, {retryOnStatusCodeFailure: true})
     })
 
     it('Test login page placeholders', () => {

@@ -22,5 +22,4 @@ Given(`I login as following`, dataTable => {
         loginPage.clickLoginButton()
         loginPage.verifyUiLoginMessage(row.Message)
     });
-
 })
