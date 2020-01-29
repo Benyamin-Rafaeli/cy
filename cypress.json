@@ -1,9 +1,5 @@
 {
-  "screenSize": [
-    "1200",
-    "800"
-  ],
-  "video": true,
+  "video": false,
   "videosFolder": "cypress/videos",
   "screenshotsFolder": "cypress/screenshots",
   "defaultCommandTimeout": 10000,
@@ -13,5 +9,10 @@
   "testFiles": [
     "**/**.spec.js",
     "**/*.feature"
+  ],
+  "baseUrl": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login",
+  "screenSize": [
+    "1200",
+    "800"
   ]
 }

@@ -17,10 +17,13 @@ Run headed
 npm run cy:headed
 ```
 
-Run Specific spec
+Run Specific spec and Environment
 ----------
 ```sh
 npm run cy:headed --spec cypress/integration/examples/opensourcecms.spec.js
+
+npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name=qa --browser=chrome
+npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name=dev --browser=chrome
 ```
 
 Run headless
