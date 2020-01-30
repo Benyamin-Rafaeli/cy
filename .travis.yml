@@ -30,10 +30,10 @@ cache:
 defaults: &defaults
   script:
     #   ## print all Travis environment variables for debugging
-    - $(npm bin)/print-env TRAVIS
+    # - $(npm bin)/print-env TRAVIS
     # - npm run start:ci &
     # - npm run cy:run -- --record --parallel --group $STAGE_NAME
-    - npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --group 2x-chrome --browser chrome --parallel
+    - npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --group 4x-chrome --browser chrome --parallel
     # after all tests finish running we need
     # to kill all background jobs (like "npm start &")
     - kill $(jobs -p) || true
