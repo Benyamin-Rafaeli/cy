@@ -11,12 +11,12 @@ language: node_js
 node_js:  
   - stable
 
-# # if using Ubuntu 16 need this library
+# if using Ubuntu 16 need this library
 # # https://github.com/cypress-io/cypress-documentation/pull/1647
-# addons:
-#   apt:
-#     packages:
-#     - libgconf-2-4
+addons:
+  apt:
+    packages:
+    - libgconf-2-4
 
 cache:
   # cache both npm modules and Cypress binary
@@ -33,7 +33,7 @@ defaults: &defaults
     - $(npm bin)/print-env TRAVIS
     # - npm run start:ci &
     # - npm run cy:run -- --record --parallel --group $STAGE_NAME
-    - npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --parallel --group $STAGE_NAME
+    - npm cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --parallel --group $STAGE_NAME --browser=chrome
     # after all tests finish running we need
     # to kill all background jobs (like "npm start &")
     - kill $(jobs -p) || true
