@@ -62,3 +62,8 @@ Update Cypress
 npm update cypress
 ```
 
+Dashboard Cypress Latest runs
+----------
+```sh
+https://dashboard.cypress.io/projects/4g6xfs/runs
+```
