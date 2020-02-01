@@ -1,7 +1,7 @@
 This is a bootstrap project where I implemented the full e2e test cycle that included:
-CI in Travis and displayed in public view on dashboard 
-Parallel execution and displayed in public view on Cypress dashboard
-Visual UI testing with Percy.io and displayed in public view on Percy dashboard
+<br>* CI in Travis and displayed in public view on dashboard
+<br>* Parallel execution and displayed in public view on Cypress dashboard
+<br>* Visual UI testing with Percy.io and displayed in public view on Percy dashboard
 
 Setup
 ------------
@@ -71,14 +71,12 @@ npm update cypress
 
 Dashboard Cypress
 ----------
-```sh
 https://dashboard.cypress.io/projects/4g6xfs/runs
-```
 
 Dashboard Percy
 ----------
-```sh
 https://percy.io/CY-POC/bootstrap-cy
-```
 
+Dashboard Travis
+----------
 https://travis-ci.com/Benyamin-Rafaeli/cy/builds/
