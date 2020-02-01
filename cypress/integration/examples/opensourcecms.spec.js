@@ -5,18 +5,17 @@ import '@percy/cypress';
 describe('Test opensourcecms', () => {
     beforeEach('Navigate to website', () => {
         cy.viewport(1200, 800)        
-        cy.visit('/', {retryOnStatusCodeFailure: true})
+        cy.visit('/', {retryOnStatusCodeFailure: true})                
     })
 
-    it('Test login page placeholders', () => {
-        // cy.percySnapshot('Before')
+    it('Test login page placeholders', () => {            
+        // const uniqueName = `${Cypress.spec.name.slice(0, -3)}_${Cypress.moment().millisecond()}`  
+        cy.percySnapshot()
         loginPage.checkPlaceHolder('Username')
-        loginPage.checkPlaceHolder('Password')
-        // cy.percySnapshot('After')
+        loginPage.checkPlaceHolder('Password')        
     })
 
-    it('Test login page all invalid permutations', () => {
-        // cy.percySnapshot('Before')
+    it('Test login page all invalid permutations', () => {        
         loginPage.performLogin('admin', 'password')
         loginPage.clickLoginButton()
         loginPage.verifyUiLoginMessage('Invalid credentials')
@@ -32,7 +31,7 @@ describe('Test opensourcecms', () => {
         loginPage.performLogin('opensourcecms', '')
         loginPage.clickLoginButton()
         loginPage.verifyUiLoginMessage('Password cannot be empty')
-        // cy.percySnapshot('After')
+        cy.percySnapshot('_After')
     })
 
     // it('Perform login validation', () => {

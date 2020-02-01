@@ -4,7 +4,7 @@
     "scripts": {
         "start": "npm run cy",
         "cy": "./node_modules/.bin/cypress run",
-        "cy:headed": "./node_modules/.bin/cypress run --headed",
+        "cyh": "./node_modules/.bin/cypress run --headed",
         "cyx": "npx cypress open"
     },
     "devDependencies": {
@@ -12,7 +12,10 @@
         "cypress": "^3.8.3",
         "cypress-cucumber-preprocessor": "^2.0.1",
         "cypress-dark": "^1.7.14",
-        "cypress-xpath": "^1.4.0"
+        "cypress-xpath": "^1.4.0",
+        "electron-rebuild": "^1.10.0",
+        "@babel/register": "^7.8.3",
+        "@cypress/browserify-preprocessor": "^2.1.1"
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true

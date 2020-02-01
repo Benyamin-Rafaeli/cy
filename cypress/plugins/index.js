@@ -13,14 +13,13 @@
 
 const fs = require('fs-extra')
 const path = require('path')
-
+const cucumber = require('cypress-cucumber-preprocessor').default
 const percyHealthCheck = require('@percy/cypress/task')
+
+
 module.exports = (on, config) => {
   on('task', percyHealthCheck);
-};
 
-const cucumber = require('cypress-cucumber-preprocessor').default
-module.exports = (on, config) => {
   on('file:preprocessor', cucumber());
 
   on('before:browser:launch', (browser = {}, args) => {
@@ -33,7 +32,7 @@ module.exports = (on, config) => {
     //   args['fullscreen'] = true
     //   return args
     // }
-  })
+  });
 
   function processConfigName(on, config) {
     const file = config.env.name || 'default'
@@ -45,13 +44,13 @@ module.exports = (on, config) => {
       // return file object
       return file
     })
-  }
+  };
 
   function getConfigFile(file) {
     const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
     return fs.readJson(pathToConfigFile)
-  }
+  };
 
   // Return the configuration file details
-  return processConfigName(on, config)
+  return processConfigName(on, config);
 }

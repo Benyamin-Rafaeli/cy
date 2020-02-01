@@ -3,7 +3,6 @@
 context('Actions', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/commands/actions')
-    // cy.percySnapshot()
   })
 
   // https://on.cypress.io/interacting-with-elements
@@ -32,6 +31,8 @@ context('Actions', () => {
       // like whether the input is visible or disabled
       .type('disabled error checking', { force: true })
       .should('have.value', 'disabled error checking')
+
+    // cy.percySnapshot(this.test.fullTitle())
   })
 
   it('.focus() - focus on a DOM element', () => {
@@ -279,5 +280,5 @@ context('Actions', () => {
     // control the duration of the scroll (in ms)
     cy.get('#scrollable-both').scrollTo('center', { duration: 2000 })
   })
-  // cy.percySnapshot()
+
 })
