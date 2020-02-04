@@ -27,3 +27,8 @@ Cypress.Commands.add('login', (userName, password) => {
     cy.get('#btnLogin').click({ force: true })
     cy.url().should('include', '/orangehrm/index.php')
 })
+
+Cypress.Commands.add('navigate', () => {
+    cy.viewport(1200, 800)
+    cy.visit('/', { retryOnStatusCodeFailure: true })
+})

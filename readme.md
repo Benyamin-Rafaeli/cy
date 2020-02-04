@@ -14,23 +14,12 @@ Installation
 ------------
 ```sh
 npm i
-
-for persy need to export PERCY_TOKEN=24a53b2592a5de794b3ef8fb9e76fb33bfda5b57baff7a3ba6495d622407b4b4
 ```
 
 Run headed
 ----------
 ```sh
 npm run cyh
-```
-
-Run Specific spec and Environment
-----------
-```sh
-npm run cyh --spec cypress/integration/examples/opensourcecms.spec.js
-
-npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name qa --browser chrome
-npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name dev --browser chrome
 ```
 
 Run headless
@@ -43,6 +32,15 @@ Runner Cypress
 ----------
 ```sh
 npm run cyx
+```
+
+Run Specific spec and Environment
+----------
+```sh
+npm run cyh --spec cypress/integration/examples/opensourcecms.spec.js
+
+npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name qa --browser chrome
+npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name dev --browser chrome
 ```
 
 Run in Docker 
