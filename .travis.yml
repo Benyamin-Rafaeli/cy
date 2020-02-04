@@ -24,9 +24,10 @@ cache:
 defaults: &defaults
   script:
     # this is a percy token 
-    - export PERCY_TOKEN=24a53b2592a5de794b3ef8fb9e76fb33bfda5b57baff7a3ba6495d622407b4b4
-    - npx percy exec -- cypress run 
-    # - npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --group 1x-chrome --browser chrome --parallel
+    # - export PERCY_TOKEN=24a53b2592a5de794b3ef8fb9e76fb33bfda5b57baff7a3ba6495d622407b4b4
+    # - npx percy exec -- cypress run 
+    # this is run for cypress dashboard
+    - npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --group 1x-chrome --browser chrome --parallel
     # - npx percy exec -- cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --group 1x-chrome --browser chrome --parallel
     # after all tests finish running we need
     # to kill all background jobs (like "npm start &")
