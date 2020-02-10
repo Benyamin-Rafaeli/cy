@@ -68,7 +68,7 @@ npm update cypress
 ```
 
 Dashboard Cypress
-----------
+----------  
 https://dashboard.cypress.io/projects/4g6xfs/runs
 
 Dashboard Percy

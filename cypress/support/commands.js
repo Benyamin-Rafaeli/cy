@@ -32,3 +32,18 @@ Cypress.Commands.add('navigate', () => {
     cy.viewport(1200, 800)
     cy.visit('/', { retryOnStatusCodeFailure: true })
 })
+
+Cypress.Commands.add('loginTrello', () => {
+    const url = 'https://trello.com/login'
+    const timeToWait = 3000
+    cy.viewport(1200, 800)
+    cy.visit(url, { retryOnStatusCodeFailure: true })
+    cy.get('#user').type('mediapp100@gmail.com')
+    cy.wait(timeToWait)
+    cy.get('#password').type('KH9ER32W8dtwmvN2')
+    cy.wait(timeToWait)
+    cy.pause()
+    cy.get('#login').click()
+    cy.pause()
+
+})
