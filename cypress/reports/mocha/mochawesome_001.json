@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-02-12T19:47:12.475Z",
-    "end": "2020-02-12T19:47:19.065Z",
-    "duration": 6590,
+    "start": "2020-02-12T20:18:09.226Z",
+    "end": "2020-02-12T20:18:16.390Z",
+    "duration": 7164,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "53ce4e27-34a0-4fb9-9124-4daf64a56f6a",
+      "uuid": "b79bc867-3295-4685-8948-172202cf25b0",
       "title": "",
       "fullFile": "cypress/integration/examples/Cucumber/opensourcecms.feature",
       "file": "cypress/integration/examples/Cucumber/opensourcecms.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1f4c6e0e-9013-48fe-a8b6-1cb09543e6e7",
+          "uuid": "b2396c3b-3d78-4c8c-a9d4-a95369c810e6",
           "title": "opensourcecms feature",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Test login page placeholders",
               "fullTitle": "opensourcecms feature Test login page placeholders",
               "timedOut": null,
-              "duration": 1839,
+              "duration": 2343,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "cfd11885-a331-4a1d-92b2-040f9ca96f5c",
-              "parentUUID": "1f4c6e0e-9013-48fe-a8b6-1cb09543e6e7",
+              "uuid": "90750446-cb08-4073-8c80-328cd1b9f88b",
+              "parentUUID": "b2396c3b-3d78-4c8c-a9d4-a95369c810e6",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Test login page all invalid permutations",
               "fullTitle": "opensourcecms feature Test login page all invalid permutations",
               "timedOut": null,
-              "duration": 4645,
+              "duration": 4679,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "ed2fcf94-487f-407e-965a-f6d27fc875b3",
-              "parentUUID": "1f4c6e0e-9013-48fe-a8b6-1cb09543e6e7",
+              "uuid": "e5203a2e-35cf-45b4-af32-96766b163942",
+              "parentUUID": "b2396c3b-3d78-4c8c-a9d4-a95369c810e6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cfd11885-a331-4a1d-92b2-040f9ca96f5c",
-            "ed2fcf94-487f-407e-965a-f6d27fc875b3"
+            "90750446-cb08-4073-8c80-328cd1b9f88b",
+            "e5203a2e-35cf-45b4-af32-96766b163942"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6484,
+          "duration": 7022,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

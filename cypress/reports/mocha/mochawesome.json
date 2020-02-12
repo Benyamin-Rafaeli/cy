@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-02-12T19:47:00.437Z",
-    "end": "2020-02-12T19:47:07.502Z",
-    "duration": 7065,
+    "start": "2020-02-12T20:17:55.492Z",
+    "end": "2020-02-12T20:18:04.844Z",
+    "duration": 9352,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7aecc971-2b45-4889-bfb8-5c11be516aad",
+      "uuid": "6fdf868d-d049-4870-a8d8-2e87b903521f",
       "title": "",
       "fullFile": "cypress/integration/examples/opensourcecms.spec.js",
       "file": "cypress/integration/examples/opensourcecms.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3571fb07-4e2e-472d-ab97-26a2ed241070",
+          "uuid": "c7b19a84-ad60-4b02-843f-327da9b199d6",
           "title": "Test opensourcecms",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Test login page placeholders",
               "fullTitle": "Test opensourcecms Test login page placeholders",
               "timedOut": null,
-              "duration": 2189,
+              "duration": 3887,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.percySnapshot();\n_OSLoginPage.loginPage.checkPlaceHolder('Username');\n_OSLoginPage.loginPage.checkPlaceHolder('Password');",
               "err": {},
-              "uuid": "dafa656d-9cde-4b65-9fef-d1ae870378d1",
-              "parentUUID": "3571fb07-4e2e-472d-ab97-26a2ed241070",
+              "uuid": "6478775a-97b4-4325-a492-11271cc667ca",
+              "parentUUID": "c7b19a84-ad60-4b02-843f-327da9b199d6",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Test login page all invalid permutations",
               "fullTitle": "Test opensourcecms Test login page all invalid permutations",
               "timedOut": null,
-              "duration": 4814,
+              "duration": 5420,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "_OSLoginPage.loginPage.performLogin('admin', 'password');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Invalid credentials');\n_OSLoginPage.loginPage.performLogin('', '');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Username cannot be empty');\n_OSLoginPage.loginPage.performLogin('', 'opensourcecms');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Username cannot be empty');\n_OSLoginPage.loginPage.performLogin('opensourcecms', '');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Password cannot be empty');\ncy.percySnapshot('After');",
               "err": {},
-              "uuid": "858799d9-24cb-47a5-a9eb-49f03da2688a",
-              "parentUUID": "3571fb07-4e2e-472d-ab97-26a2ed241070",
+              "uuid": "36acc93b-3d22-4ce4-9444-2df6265154bd",
+              "parentUUID": "c7b19a84-ad60-4b02-843f-327da9b199d6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dafa656d-9cde-4b65-9fef-d1ae870378d1",
-            "858799d9-24cb-47a5-a9eb-49f03da2688a"
+            "6478775a-97b4-4325-a492-11271cc667ca",
+            "36acc93b-3d22-4ce4-9444-2df6265154bd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7003,
+          "duration": 9307,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
