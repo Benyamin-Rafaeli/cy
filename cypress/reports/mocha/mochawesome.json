@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-02-12T19:47:00.437Z",
+    "end": "2020-02-12T19:47:07.502Z",
+    "duration": 7065,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7aecc971-2b45-4889-bfb8-5c11be516aad",
+      "title": "",
+      "fullFile": "cypress/integration/examples/opensourcecms.spec.js",
+      "file": "cypress/integration/examples/opensourcecms.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3571fb07-4e2e-472d-ab97-26a2ed241070",
+          "title": "Test opensourcecms",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test login page placeholders",
+              "fullTitle": "Test opensourcecms Test login page placeholders",
+              "timedOut": null,
+              "duration": 2189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.percySnapshot();\n_OSLoginPage.loginPage.checkPlaceHolder('Username');\n_OSLoginPage.loginPage.checkPlaceHolder('Password');",
+              "err": {},
+              "uuid": "dafa656d-9cde-4b65-9fef-d1ae870378d1",
+              "parentUUID": "3571fb07-4e2e-472d-ab97-26a2ed241070",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test login page all invalid permutations",
+              "fullTitle": "Test opensourcecms Test login page all invalid permutations",
+              "timedOut": null,
+              "duration": 4814,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_OSLoginPage.loginPage.performLogin('admin', 'password');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Invalid credentials');\n_OSLoginPage.loginPage.performLogin('', '');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Username cannot be empty');\n_OSLoginPage.loginPage.performLogin('', 'opensourcecms');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Username cannot be empty');\n_OSLoginPage.loginPage.performLogin('opensourcecms', '');\n_OSLoginPage.loginPage.clickLoginButton();\n_OSLoginPage.loginPage.verifyUiLoginMessage('Password cannot be empty');\ncy.percySnapshot('After');",
+              "err": {},
+              "uuid": "858799d9-24cb-47a5-a9eb-49f03da2688a",
+              "parentUUID": "3571fb07-4e2e-472d-ab97-26a2ed241070",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dafa656d-9cde-4b65-9fef-d1ae870378d1",
+            "858799d9-24cb-47a5-a9eb-49f03da2688a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7003,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

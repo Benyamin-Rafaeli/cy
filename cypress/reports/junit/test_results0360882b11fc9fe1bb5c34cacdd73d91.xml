@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.0030" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-02-12T19:47:00" tests="0" file="cypress/integration/examples/opensourcecms.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test opensourcecms" timestamp="2020-02-12T19:47:00" tests="2" time="7.0030" failures="0">
+    <testcase name="Test opensourcecms Test login page placeholders" time="2.1890" classname="Test login page placeholders">
+    </testcase>
+    <testcase name="Test opensourcecms Test login page all invalid permutations" time="4.8140" classname="Test login page all invalid permutations">
+    </testcase>
+  </testsuite>
+</testsuites>

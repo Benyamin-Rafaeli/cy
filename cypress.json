@@ -1,4 +1,5 @@
 {
+  "baseUrl": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login",
   "video": false,
   "videosFolder": "cypress/videos",
   "screenshotsFolder": "cypress/screenshots",
@@ -10,5 +11,8 @@
     "**/**.spec.js",
     "**/*.feature"
   ],
-  "baseUrl": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login"
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporterOpts.json"
+  }
 }
