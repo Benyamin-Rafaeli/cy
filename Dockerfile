@@ -13,4 +13,5 @@ COPY cypress.json .
 COPY reporterOpts.json .
 
 
-RUN $(npm bin)/cypress
+# RUN $(npm bin)/cypress
+RUN sh run.sh

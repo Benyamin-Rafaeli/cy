@@ -61,12 +61,6 @@ Cypress Dashboard and Parallel
 npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --parallel
 ```
 
-Update Cypress 
-----------
-```sh
-npm update cypress
-```
-
 Dashboard Cypress
 ----------  
 https://dashboard.cypress.io/projects/4g6xfs/runs
