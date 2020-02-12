@@ -39,11 +39,15 @@ Cypress.Commands.add('loginTrello', () => {
     cy.viewport(1200, 800)
     cy.visit(url, { retryOnStatusCodeFailure: true })
     cy.get('#user').type('mediapp100@gmail.com')
-    cy.wait(timeToWait)
-    cy.get('#password').type('KH9ER32W8dtwmvN2')
-    cy.wait(timeToWait)
-    cy.pause()
-    cy.get('#login').click()
-    cy.pause()
+
+    // cy.wait(timeToWait)
+    cy.get('show-when-password').should('be.ok')
+    // .debug()
+
+    // cy.get('#password').type('KH9ER32W8dtwmvN2')
+    // cy.wait(timeToWait)
+    // cy.pause()
+    // cy.get('#login').click()
+    // cy.pause()
 
 })

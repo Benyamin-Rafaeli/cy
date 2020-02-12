@@ -10,5 +10,7 @@ RUN $(npm bin)/cypress verify
 
 COPY cypress cypress
 COPY cypress.json .
+COPY reporterOpts.json .
+
 
 RUN $(npm bin)/cypress
