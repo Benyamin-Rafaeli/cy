@@ -7,7 +7,7 @@ services:
         # command: npm run cy && npx mochawesome-merge cypress/reports/mocha/*.json > cypress/mochareports/report.json && npx marge cypress/mochareports/*.json -f report -o cypress/mochareports
         # command: npm run cy
         volumes: 
-            - /Users/sun/report:/app/cypress/videos
-            - /Users/sun/report:/app/cypress/screenshots
-            - /Users/sun/report:/app/cypress/reports
-            - /Users/sun/report:/app/cypress/mochareports
+            - /Users/benjamin/report:/app/cypress/videos
+            - /Users/benjamin/report:/app/cypress/screenshots
+            - /Users/benjamin/report:/app/cypress/reports
+            - /Users/benjamin/report:/app/cypress/mochareports
