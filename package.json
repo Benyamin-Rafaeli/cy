@@ -8,26 +8,26 @@
         "cyx": "npx cypress open"
     },
     "devDependencies": {
-        "@babel/register": "^7.8.3",
-        "@cypress/browserify-preprocessor": "^2.1.1",
-        "@percy/cypress": "^2.3.0",
-        "cypress": "^4.0.1",
-        "cypress-cucumber-preprocessor": "^2.0.1",
-        "cypress-dark": "^1.7.14",
-        "cypress-xpath": "^1.4.0",
-        "electron-rebuild": "^1.10.0",
-        "cypress-multi-reporters": "^1.2.3",
-        "mocha": "^7.0.1",
-        "mocha-junit-reporter": "^1.23.3",
-        "mochawesome": "^4.1.0",
-        "mochawesome-merge": "^4.0.0",
-        "mochawesome-report-generator": "^4.1.0"
+        "@babel/register": "7.8.3",
+        "@cypress/browserify-preprocessor": "2.1.4",
+        "@percy/cypress": "2.3.0",
+        "cypress": "4.0.1",
+        "cypress-cucumber-preprocessor": "2.0.1",
+        "cypress-dark": "1.7.14",
+        "cypress-xpath": "1.4.0",
+        "electron-rebuild": "1.10.0",
+        "cypress-multi-reporters": "1.2.4",
+        "mocha": "7.0.1",
+        "mocha-junit-reporter": "1.23.3",
+        "mochawesome": "4.1.0",
+        "mochawesome-merge": "4.0.0",
+        "mochawesome-report-generator": "4.1.0"
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true
     },
     "dependencies": {
-        "cypress-commands": "^1.0.0",
-        "marge": "^1.0.1"
+        "cypress-commands": "1.0.0",
+        "marge": "1.0.1"
     }
 }
