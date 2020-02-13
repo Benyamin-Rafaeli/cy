@@ -1,3 +1,5 @@
+# [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)]
+
 This is a bootstrap project where I implemented the full e2e test cycle that included:
 <br>* CI in Travis and displayed in public view on dashboard
 <br>* Parallel execution and displayed in public view on Cypress dashboard
