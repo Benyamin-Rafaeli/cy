@@ -1,4 +1,10 @@
 node_modules
+cypress/mochareports/*
+!cypress/mochareports/.gitignore
+cypress/reports/junit/*
+!cypress/reports/junit/.gitignore
+cypress/reports/mocha/*
+!cypress/reports/mocha/.gitignore
 cypress/integration/screenshots/*
 cypress/integration/videos/*
 cypress/reports/*

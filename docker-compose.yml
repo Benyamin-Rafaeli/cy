@@ -5,12 +5,9 @@ services:
         build: .
         container_name: cy_docker
         # command: npm run cy && npx mochawesome-merge cypress/reports/mocha/*.json > cypress/mochareports/report.json && npx marge cypress/mochareports/*.json -f report -o cypress/mochareports
-        command: npm run cy
+        # command: npm run cy
         volumes: 
             - /Users/benjamin/report:/app/cypress/videos
             - /Users/benjamin/report:/app/cypress/screenshots
             - /Users/benjamin/report:/app/cypress/reports
             - /Users/benjamin/report:/app/cypress/mochareports
-
-
-            
