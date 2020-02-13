@@ -1,4 +1,9 @@
-# [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)]
+
+[![Build Status](https://travis-ci.com/Benyamin-Rafaeli/cy.svg?branch=master)](https://travis-ci.com/Benyamin-Rafaeli/cy/builds/)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/CY-POC/bootstrap-cy) 
+[![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://dashboard.cypress.io/projects/4g6xfs/runs) 
+
+
 
 This is a bootstrap project where I implemented the full e2e test cycle that included:
 <br>* CI in Travis and displayed in public view on dashboard
