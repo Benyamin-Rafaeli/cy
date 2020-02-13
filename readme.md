@@ -3,8 +3,9 @@
 [![Build Status](https://travis-ci.com/Benyamin-Rafaeli/cy.svg?branch=master)](https://travis-ci.com/Benyamin-Rafaeli/cy/builds/)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/CY-POC/bootstrap-cy) 
 [![Cypress.io tests](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/4g6xfs/runs)
-[![Action status](https://github.com/cypress-io/github-action/workflows/main/badge.svg?branch=master)](https://github.com/cypress-io/github-action/actions)
 [![Action status](https://img.shields.io/docker/pulls/cypress/base.svg)](https://hub.docker.com/r/cypress/base)
+[![Action status](https://github.com/cypress-io/github-action/workflows/main/badge.svg?branch=master)](https://github.com/cypress-io/github-action/actions)
+[![renovate-app badge](https://img.shields.io/badge/renovate-app-blue.svg)](https://renovate.whitesourcesoftware.com/)
 
 This is a bootstrap project where I implemented the full e2e test cycle that included:
 - CI in Travis and displayed in public view on dashboard
