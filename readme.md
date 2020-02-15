@@ -6,6 +6,8 @@
 [![Action status](https://img.shields.io/docker/pulls/cypress/base.svg)](https://hub.docker.com/r/cypress/base)
 [![Action status](https://github.com/cypress-io/github-action/workflows/main/badge.svg?branch=master)](https://github.com/cypress-io/github-action/actions)
 [![renovate-app badge](https://img.shields.io/badge/renovate-app-blue.svg)](https://renovate.whitesourcesoftware.com/)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure)](https://sonarcloud.io/organizations/benyamin-rafaeli/projects)
+
 
 This is a bootstrap project where I implemented the full e2e test cycle that included:
 - CI in Travis and displayed in public view on dashboard
