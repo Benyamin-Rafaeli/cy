@@ -11,3 +11,13 @@ services:
             - /Users/benjamin/report:/app/cypress/screenshots
             - /Users/benjamin/report:/app/cypress/reports
             - /Users/benjamin/report:/app/cypress/mochareports
+
+        addons:
+            sonarcloud:
+                organization: "benyamin-rafaeli"
+                token:
+                secure: "**************************" # encrypted value of your token
+                # travis encrypt 9d5f34f1af51656663ba00fc362d0a80b720e918
+            script:
+            # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+            - sonar-scanner
