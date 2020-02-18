@@ -1,3 +1,3 @@
 {
-    "baseUrl": "https://www.glassdoor.com/index.htm"
+    "baseUrl": "http://localhost:3000/todos"
 }

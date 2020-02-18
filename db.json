@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "read something"
+    },
+    {
+      "id": 2,
+      "task": "write something"
+    },
+    {
+      "id": 3,
+      "title": "my fucking test",
+      "author": "kaka maika"
+    }
+  ]
+}

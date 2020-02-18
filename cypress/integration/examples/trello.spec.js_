@@ -3,30 +3,11 @@ import { loginPage } from './pages/trelloLoginPage'
 import '@percy/cypress';
 
 describe('Test trello', () => {
-    beforeEach('Navigate to website', () => cy.loginTrello())
-
-    it('Test login page', () => {
-        loginPage.performLogin('admin', 'password')
-        loginPage.clickLoginButton()
-        loginPage.verifyUiLoginMessage('Invalid credentials')
-
-        loginPage.performLogin('', '')
-        loginPage.clickLoginButton()
-        loginPage.verifyUiLoginMessage('Username cannot be empty')
-
-        loginPage.performLogin('', 'opensourcecms')
-        loginPage.clickLoginButton()
-        loginPage.verifyUiLoginMessage('Username cannot be empty')
-
-        loginPage.performLogin('opensourcecms', '')
-        loginPage.clickLoginButton()
-        loginPage.verifyUiLoginMessage('Password cannot be empty')
-        cy.percySnapshot('After')
-    })
-
-    // it('Perform login validation', () => {
-    //     cy.fixture('opensourcecms').as('user')
-    //     cy.get('@user').then(user => { cy.login(user.UserName, user.Password) })
-    //     cy.get('#option-menu').text().as('Welcome Admin')
-    // })
+    
+    const trelloToken = 'My59SfWzX3o4wEt7lRq13D18';
+    const trelloKey = 'a115025a843a196f7d71f23005f785d3';
+    
+    // https://trello.com/1/authorize?expiration=never&name=My59SfWzX3o4wEt7lRq13D18&scope=read&response_type=token&key=a115025a843a196f7d71f23005f785d3
+    
+    https://trello.com/1/authorize?expiration=never&name=trelloToken&scope=read&response_type=token&key=trelloKey
 })

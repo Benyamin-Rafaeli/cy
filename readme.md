@@ -50,6 +50,8 @@ Run Specific spec and Environment
 ```sh
 npm run cyh --spec cypress/integration/examples/opensourcecms.spec.js
 
+npx cypress run --spec cypress/integration/examples/api_example.spec.js --env name=dev
+
 npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name qa --browser chrome
 npx cypress run --spec /Users/benjamin/projects/private/cy/cypress/integration/examples/opensourcecms.spec.js --env name dev --browser chrome
 ```
