@@ -12,6 +12,7 @@ COPY cypress cypress
 COPY cypress.json .
 COPY reporterOpts.json .
 COPY run.sh .
+COPY db.json .
 
 # RUN $(npm bin)/cypress
 ENTRYPOINT [ "sh", "run.sh" ]
