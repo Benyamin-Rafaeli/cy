@@ -36,6 +36,8 @@ cache:
 
 defaults: &defaults
   script:
+    # start local json server
+    - npm run srv
     # this is a percy token 
     # - export PERCY_TOKEN=24a53b2592a5de794b3ef8fb9e76fb33bfda5b57baff7a3ba6495d622407b4b4
     # - npx percy exec -- cypress run 
