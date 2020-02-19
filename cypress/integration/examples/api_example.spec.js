@@ -5,13 +5,13 @@ context('Test API from the Fake JSON Server', () => {
     const myUrl = 'http://localhost:3000/todos';
     const myTitle = 'my fucking test';
 
-    beforeEach('DELETE before creating a new value', () => {
-        cy.request({
-            method: 'DELETE',
-            url: `${myUrl}/3`,
-            failOnStatusCode: false
-        }).then(res => expect(res.body).to.be.empty)
-    })
+    // beforeEach('DELETE before creating a new value', () => {
+    //     cy.request({
+    //         method: 'DELETE',
+    //         url: `${myUrl}/3`,
+    //         failOnStatusCode: false
+    //     }).then(res => expect(res.body).to.be.empty)
+    // })
 
     it('Test GET functionality of JSON Sever', () => {
         cy.request(`${myUrl}/1`).its('body').should('have.property', 'id');
