@@ -4,9 +4,7 @@ services:
         image: cypress
         build: .
         container_name: cy_docker
-        # command: npm run cy && npx mochawesome-merge cypress/reports/mocha/*.json > cypress/mochareports/report.json && npx marge cypress/mochareports/*.json -f report -o cypress/mochareports
-        # command: npm run cy
-        # command: npm run srv
+        # command: npm run cy && npx mochawesome-merge cypress/reports/mocha/*.json > cypress/mochareports/report.json && npx marge cypress/mochareports/*.json -f report -o cypress/mochareports                
         volumes: 
             - /Users/benjamin/report:/app/cypress/videos
             - /Users/benjamin/report:/app/cypress/screenshots
@@ -14,11 +12,11 @@ services:
             - /Users/benjamin/report:/app/cypress/mochareports
 
         # addons:
-        #     sonarcloud:
-        #         organization: "benyamin-rafaeli"
-        #         token:
-        #         secure: "9d5f34f1af51656663ba00fc362d0a80b720e918" # encrypted value of your token
-        #         # travis encrypt 9d5f34f1af51656663ba00fc362d0a80b720e918
-        #     script:
-        #     # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-        #     - sonar-scanner
+        sonarcloud:
+            organization: "benyamin-rafaeli"
+            token:
+            secure: "9d5f34f1af51656663ba00fc362d0a80b720e918" # encrypted value of your token
+            # travis encrypt 9d5f34f1af51656663ba00fc362d0a80b720e918
+        script:
+        # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+        - sonar-scanner
