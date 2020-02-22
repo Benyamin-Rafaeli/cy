@@ -1,5 +1,9 @@
 {
   "baseUrl": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login",
+  "env": {
+    "qa": "bar",
+    "dev": "http://localhost:3000"
+  },
   "video": false,
   "videosFolder": "cypress/videos",
   "screenshotsFolder": "cypress/screenshots",
