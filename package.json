@@ -30,6 +30,6 @@
     "dependencies": {
         "cypress-commands": "1.0.0",
         "marge": "1.0.1",
-        "json-server": "0.16.0"
+        "json-server": "0.16.1"
     }
 }
