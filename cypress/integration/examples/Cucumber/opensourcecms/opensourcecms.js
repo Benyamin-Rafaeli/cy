@@ -1,7 +1,7 @@
 import { Given, And, Then } from 'cypress-cucumber-preprocessor/steps'
 import { loginPage } from "../../pages/OSLoginPage.js"
 
-Given(`I visit opensourcecms site`, () => cy.navigate())
+Given(`I visit {string} site`, env => cy.navigate(env))
 
 And(`I check placeholder of {string}`, field => loginPage.checkPlaceHolder(field))
 

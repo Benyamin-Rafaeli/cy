@@ -28,26 +28,9 @@ Cypress.Commands.add('login', (userName, password) => {
     cy.url().should('include', '/orangehrm/index.php')
 })
 
-Cypress.Commands.add('navigate', () => {
-    cy.viewport(1200, 800)
-    cy.visit('/', { retryOnStatusCodeFailure: true })
-})
+Cypress.Commands.add('navigate', env => {
+    let url = env == 'qa' ? Cypress.env('qa') : undefined
 
-Cypress.Commands.add('loginTrello', () => {
-    const url = 'https://trello.com/login'
-    const timeToWait = 3000
     cy.viewport(1200, 800)
     cy.visit(url, { retryOnStatusCodeFailure: true })
-    cy.get('#user').type('mediapp100@gmail.com')
-
-    // cy.wait(timeToWait)
-    cy.get('show-when-password').should('be.ok')
-    // .debug()
-
-    // cy.get('#password').type('KH9ER32W8dtwmvN2')
-    // cy.wait(timeToWait)
-    // cy.pause()
-    // cy.get('#login').click()
-    // cy.pause()
-
 })

@@ -1,7 +1,6 @@
 {
-  "baseUrl": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login",
   "env": {
-    "qa": "bar",
+    "qa": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login",
     "dev": "http://localhost:3000"
   },
   "video": false,

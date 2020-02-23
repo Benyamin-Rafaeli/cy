@@ -3,13 +3,13 @@ Feature: opensourcecms feature
 
     # @focus
     Scenario: Test login page placeholders
-        Given I visit opensourcecms site
+        Given I visit 'qa' site
         And I check placeholder of 'Username'
         And I check placeholder of 'Password'
 
 
     Scenario: Test login page all invalid permutations
-        Given I visit opensourcecms site
+        Given I visit 'qa' site
         Given I login as following
             | UserName      | Password      | Message                  |
             | admin         | password      | Invalid credentials      |

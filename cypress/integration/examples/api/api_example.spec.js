@@ -3,7 +3,6 @@
 // context('Test API from the Fake JSON Server', () => {
 //     const myUrl = 'http://localhost:3000/todos';
 //     const myTitle = 'my fucking test';
-
 //     beforeEach('DELETE before creating a new value', () => {
 //         cy.request({
 //             method: 'DELETE',
@@ -11,11 +10,9 @@
 //             failOnStatusCode: false
 //         }).then(res => expect(res.body).to.be.empty)
 //     })
-
 //     it('Test GET functionality of JSON Sever', () => {
 //         cy.request(`${myUrl}/1`).its('body').should('have.property', 'id');
 //     })
-
 //     // explicit version
 //     it('Test POST  functionality of JSON Sever', () => {
 //         cy.request({
@@ -32,13 +29,8 @@
 
 describe('todos API', () => {
 
-    // /**
-    //  * @typedef {Object} Todo
-    //  * @property {number} id
-    //  * @property {string} task
-    //  */
-
-    // /** @type {Todo[]} */
+    let testUrl
+    before(() => testUrl = Cypress.env('dev') + '/todos')
 
     const initialItems = [
         {
@@ -53,8 +45,6 @@ describe('todos API', () => {
 
     const getItems = () => cy.request(testUrl).its('body')
 
-    // /** @type {(todo:Todo) => Cypress.Chainable} */
-
     const add = item => cy.request('POST', testUrl, item)
 
     const deleteItem = item => cy.request('DELETE', `${testUrl}/${item.id}`)
@@ -68,9 +58,6 @@ describe('todos API', () => {
 
     beforeEach(reset)
     afterEach(reset)
-
-    let testUrl
-    before(() => testUrl = Cypress.env('dev') + '/todos')
 
     // duplicated block
     it('returns JSON', () => {

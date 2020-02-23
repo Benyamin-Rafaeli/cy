@@ -3,7 +3,8 @@ import { loginPage } from "./pages/OSLoginPage.js"
 import '@percy/cypress';
 
 describe('Test opensourcecms', () => {
-    beforeEach('Navigate to website', () => cy.navigate())
+
+    beforeEach('Navigate to website', () => cy.navigate('qa'))
 
     it('Test login page placeholders', () => {
         cy.percySnapshot()
