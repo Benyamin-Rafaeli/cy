@@ -33,7 +33,7 @@ Run headed
 npm run cyh
 ```
 
-Run headless
+Run headless (Starting json server - npm run srv)
 ----------
 ```sh
 npm run cy

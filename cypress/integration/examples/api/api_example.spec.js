@@ -59,7 +59,6 @@ describe('todos API', () => {
     beforeEach(reset)
     afterEach(reset)
 
-    // duplicated block
     it('returns JSON', () => {
         cy.request(testUrl)
             .its('headers')
@@ -86,28 +85,4 @@ describe('todos API', () => {
         cy.request('DELETE', `${testUrl}/${id}`)
         getItems().should('have.length', 1)
     })
-
-
-
-    // it('returns JSON', () => cy.request('/todos').its('headers').its('content-type').should('include', 'application/json'))
-
-    // it('loads 2 items', () => cy.request('/todos').its('body').should('have.length', 2))
-
-    // it('loads the initial items', () => getItems().should('deep.eq', initialItems))
-
-    // it('returns id + task objects', () => getItems().each(value => expect(value).to.have.all.keys('id', 'task')))
-
-    // it('adds an item', () => {
-    //     const randomId = Cypress._.random(0, 10000)
-    //     const item = { id: randomId, task: 'life' }
-
-    //     add(item)
-    //     cy.request(`/todos/${randomId}`).its('body').should('deep.eq', item)
-    // })
-
-    // it('deletes an item', () => {
-    //     const id = initialItems[0].id
-    //     cy.request('DELETE', `/todos/${id}`)
-    //     getItems().should('have.length', 1)
-    // })
 })

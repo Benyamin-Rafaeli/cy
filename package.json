@@ -4,12 +4,11 @@
     "scripts": {
         "start": "npm run cy",
         "srv": "json-server db.json",
-        "cy": "./node_modules/.bin/cypress run",
+        "cy": "npm run srv & ./node_modules/.bin/cypress run",
         "cyh": "./node_modules/.bin/cypress run --headed",
         "cyx": "npx cypress open"
     },
     "devDependencies": {
-        "@babel/register": "7.8.6",
         "@cypress/browserify-preprocessor": "2.1.4",
         "@percy/cypress": "2.3.0",
         "cypress": "4.1.0",
