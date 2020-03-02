@@ -2,9 +2,9 @@
     "author": "https://www.linkedin.com/in/benyaminrafaeli/",
     "description": "cloned and customized cypress bootstrap",
     "scripts": {
-        "start": "npm run cy",
+        "start": "npm run srv & npm run cy",
         "srv": "json-server db.json",
-        "cy": "npm run srv & ./node_modules/.bin/cypress run",
+        "cy": "./node_modules/.bin/cypress run",
         "cyh": "./node_modules/.bin/cypress run --headed",
         "cyx": "npx cypress open"
     },

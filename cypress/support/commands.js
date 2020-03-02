@@ -8,7 +8,21 @@ Cypress.Commands.add('login', (userName, password) => {
 })
 
 Cypress.Commands.add('navigate', env => {
-    let url = env == 'qa' ? Cypress.env('qa') : undefined
+
+    let url
+    switch (env) {
+        case 'qa':
+            url = Cypress.env('qa')
+            break;
+        case 'dev':
+            url = Cypress.env('dev')
+            break;
+        default:
+            url = Cypress.env('default')
+            break;
+    }
+
+    // let url = env == 'qa' ? Cypress.env('qa') : undefined
 
     cy.viewport(1200, 800)
     cy.visit(url, { retryOnStatusCodeFailure: true })

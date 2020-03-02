@@ -1,5 +1,5 @@
 import { Given, And, Then } from 'cypress-cucumber-preprocessor/steps'
-import { loginPage } from "../../pages/OSLoginPage.js"
+import { loginPage } from '../../pages/OSLoginPage.js'
 
 Given(`I visit {string} site`, env => cy.navigate(env))
 

@@ -33,7 +33,7 @@ Run headed
 npm run cyh
 ```
 
-Run headless (Starting json server - npm run srv)
+Run headless
 ----------
 ```sh
 npm run cy
@@ -53,7 +53,7 @@ npm run cyh --spec cypress/integration/examples/opensourcecms.spec.js --env name
 npx cypress run --spec cypress/integration/examples/api_example.spec.js --env name=dev
 ```
 
-Run in Docker 
+Run in Docker
 ----------
 ```sh
 docker-compose -f docker-compose.yml up  (--build)
