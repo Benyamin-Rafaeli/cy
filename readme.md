@@ -18,13 +18,7 @@ Setup
 ------------
 ```sh
 $ git clone https://github.com/Benyamin-Rafaeli/cy
-$ cd cy
-```
-
-Installation
-------------
-```sh
-npm i
+$ cd cy && npm i
 ```
 
 Run headed
@@ -48,9 +42,7 @@ npm run cyx
 Run Specific spec and Environment
 ----------
 ```sh
-npm run cyh --spec cypress/integration/examples/opensourcecms.spec.js --env name=qa 
-
-npx cypress run --spec cypress/integration/examples/api_example.spec.js --env name=dev
+npx cypress run --spec cypress/integration/examples/regular/opensourcecms.spec.js --env name=qa 
 ```
 
 Run in Docker
@@ -68,4 +60,3 @@ npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --parallel
 ## TODO
 
 - Slack Integration
-- Cross-browser (latest version)
