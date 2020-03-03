@@ -32,6 +32,6 @@ module.exports = (on, config) => {
   }
 
   // Return the configuration file details
-  console.log(config)
+  // console.log(config)
   return processConfigName(on, config);
 }
