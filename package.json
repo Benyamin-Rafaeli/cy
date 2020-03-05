@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "@cypress/browserify-preprocessor": "2.1.4",
-        "@percy/cypress": "2.3.0",
+        "@percy/cypress": "2.3.1",
         "cypress": "4.1.0",
         "cypress-cucumber-preprocessor": "2.0.1",
         "cypress-dark": "1.7.14",
