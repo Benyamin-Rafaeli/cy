@@ -74,3 +74,7 @@ jobs:
       env:
         - STAGE_NAME="4x-electron on Travis CI"
       <<: *defaults
+
+after_script:
+  - curl -X POST https://api.telegram.org/bot$1148229624:AAHRtV1VHL7LWSLEWDR7nOqMZ42zfGG-cBk/sendMessage -d chat_id=$500415337 -d 'text=Sexy Frontend Deployed!'
+      
