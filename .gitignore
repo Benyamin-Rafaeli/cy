@@ -9,4 +9,5 @@ cypress/integration/screenshots/*
 cypress/integration/videos/*
 cypress/reports/*
 cypress/mochareports/*
+.idea
 

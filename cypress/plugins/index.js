@@ -19,19 +19,32 @@ module.exports = (on, config) => {
   //   }
   // });
 
-  function processConfigName(on, config) {
+  // function processConfigName(on, config) {
+  //   const file = config.env.name || 'default'
+  //   console.log('==========> this is file => ', file)
+  //   return getConfigFile(file)
+  // }
+
+  const processConfigName = (config) => {
+    // console.log('************* ===> ', config)
     const file = config.env.name || 'default'
     console.log('==========> this is file => ', file)
     return getConfigFile(file)
-  }
+  };
 
-  function getConfigFile(file) {
+  const getConfigFile = (file) => {
     const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
     console.log('==========> this is pathToConfigFile => ', pathToConfigFile)
     return fs.readJson(pathToConfigFile)
-  }
+  };
+
+  // function getConfigFile(file) {
+  //   const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
+  //   console.log('==========> this is pathToConfigFile => ', pathToConfigFile)
+  //   return fs.readJson(pathToConfigFile)
+  // }
 
   // Return the configuration file details
   // console.log(config)
-  return processConfigName(on, config);
+  return processConfigName(config);
 }

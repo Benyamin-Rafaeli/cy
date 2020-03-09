@@ -9,10 +9,23 @@
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=io.sonarcloud.examples.typescript-sqscanner-travis-project&metric=alert_status)](https://sonarcloud.io/organizations/benyamin-rafaeli/projects)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is a bootstrap project where I implemented the full e2e test cycle that included:
-- CI in Travis and displayed in public view on dashboard
-- Parallel execution and displayed in public view on Cypress dashboard
-- Visual UI testing with Percy.io and displayed in public view on Percy dashboard
+
+This is an example project testing that include the following:
+- The Cypress GUI tool, included parallelisation
+- The Cypress command line tool, and separated environment 
+- Cypress custom commands
+- PageObject Models on a Login Site
+- Cucumber BDD implementation
+- Local json-server activation and API suite realisation
+- Reusable Web Selectors
+- Travis CI integration
+- Mochawesome for fancy HTML reporting
+- Integration with Cypress Dashboard Service for project recording
+- Percy implementation (process of detecting and reviewing visual UI changes)
+- Web Scraper 
+- Docker to self contain the application 
+- Telegram reporting, just join to the channel @cyResultBot
+
 
 Setup
 ------------
@@ -59,4 +72,4 @@ npx cypress run --record --key 02ac3e53-8afa-4d78-95a1-fd6e010aa9c4 --parallel
 
 ## TODO
 
-- Slack Integration
+- Remote managing tests with Telegram bot

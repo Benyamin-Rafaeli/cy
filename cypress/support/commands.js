@@ -18,6 +18,8 @@ Cypress.Commands.add('login', (userName, password) => {
 
 Cypress.Commands.add('navigate', env => {
 
+    // console.log('-----------------/Users/benjamin/projects/private/cy/cypress/support/commands.js => ', env)
+
     let url
     switch (env) {
         case 'qa':
