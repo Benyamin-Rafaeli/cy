@@ -25,7 +25,7 @@ module.exports = (on, config) => {
   //   return getConfigFile(file)
   // }
 
-  const processConfigName = (config) => {
+  const processConfigName = () => {
     // console.log('************* ===> ', config)
     const file = config.env.name || 'default'
     console.log('==========> this is file => ', file)
