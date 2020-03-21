@@ -76,6 +76,6 @@ jobs:
       <<: *defaults
 
 after_script:  
-  - curl --request GET 'https://api.telegram.org/bot1148229624:AAHRtV1VHL7LWSLEWDR7nOqMZ42zfGG-cBk/sendmessage?chat_id=500415337&text=Activated Tests Suite'
+  # - curl --request GET 'https://api.telegram.org/bot1148229624:AAHRtV1VHL7LWSLEWDR7nOqMZ42zfGG-cBk/sendmessage?chat_id=500415337&text=Activated Tests Suite'
   - bash ./run.sh
 
