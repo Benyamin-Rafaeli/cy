@@ -7,6 +7,7 @@ npx mochawesome-merge cypress/reports/mocha/*.json > cypress/mochareports/report
 npx marge cypress/mochareports/*.json -f report -o cypress/mochareports
 
 
+sleep 10s
 # Get the token from Travis environment vars and build the bot URL:
 BOT_URL="https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage"
 
