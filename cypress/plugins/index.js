@@ -7,6 +7,20 @@ module.exports = (on, config) => {
   on('task', percyHealthCheck);
   on('file:preprocessor', cucumber());
 
+  const processConfigName = (envConfig) => {
+    const file = envConfig.env.name || 'default'
+    console.log('config.env.name: ', file)
+    return getConfigFile(file)
+  };
+
+  const getConfigFile = (file) => {
+    const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
+    return fs.readJson(pathToConfigFile)
+  };
+
+  // Return the configuration file details
+  return processConfigName(config);
+
   // on('before:browser:launch', (browser = {}, args) => {
   //   if (browser.name === 'chrome') {
   //     // args.push('--start-fullscreen')
@@ -19,18 +33,4 @@ module.exports = (on, config) => {
   //   }
   // });
 
-  const processConfigName = (config) => {
-    const file = config.env.name || 'default'
-    // console.log('==========> this is file: ', file)
-    return getConfigFile(file)
-  };
-
-  const getConfigFile = (file) => {
-    const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
-    // console.log('==========> this is pathToConfigFile: ', `${pathToConfigFile}`)
-    return fs.readJson(pathToConfigFile)
-  };
-
-  // Return the configuration file details
-  return processConfigName(config);
 }
