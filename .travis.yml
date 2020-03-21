@@ -33,8 +33,7 @@ cache:
     - npm ci
     - npm run cy:verify
 
-&defaults
-defaults: 
+defaults: &defaults
   script:
     # start local json server
     - npm run srv &
