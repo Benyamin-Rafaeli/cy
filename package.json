@@ -12,7 +12,7 @@
     "@cypress/browserify-preprocessor": "2.1.4",
     "@percy/cypress": "2.3.1",
     "cypress": "4.2.0",
-    "cypress-cucumber-preprocessor": "2.0.3",
+    "cypress-cucumber-preprocessor": "2.1.0",
     "cypress-dark": "1.7.14",
     "cypress-multi-reporters": "1.2.4",
     "cypress-xpath": "1.4.0",
