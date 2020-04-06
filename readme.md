@@ -3,8 +3,6 @@
 [![Build Status](https://travis-ci.com/Benyamin-Rafaeli/cy.svg?branch=master)](https://travis-ci.com/Benyamin-Rafaeli/cy/builds/)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/CY-POC/bootstrap-cy) 
 [![Cypress.io tests](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/4g6xfs/runs)
-[![Action status](https://img.shields.io/docker/pulls/cypress/base.svg)](https://hub.docker.com/r/cypress/base)
-[![Action status](https://github.com/cypress-io/github-action/workflows/main/badge.svg?branch=master)](https://github.com/cypress-io/github-action/actions)
 [![renovate-app badge](https://img.shields.io/badge/renovate-app-blue.svg)](https://renovate.whitesourcesoftware.com/)
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=io.sonarcloud.examples.typescript-sqscanner-travis-project&metric=alert_status)](https://sonarcloud.io/organizations/benyamin-rafaeli/projects)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
