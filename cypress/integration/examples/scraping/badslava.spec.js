@@ -55,6 +55,7 @@ describe('Crawler', () => {
                     }, {})
                 })
                 // debugger
+                console.log(`finalRows - ${finalRows}`)
                 return finalRows
             })
         // .debug()
