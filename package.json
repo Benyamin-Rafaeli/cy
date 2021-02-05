@@ -5,11 +5,9 @@
   "author": "https://www.linkedin.com/in/benyaminrafaeli/",
   "description": "cypress",
   "scripts": {
-    "start": "npm run srv & npm run cy",
-    "srv": "json-server db.json",
     "cy": "cypress run",
     "cyh": "cypress run --headed",
-    "cyx": "npx cypress open"
+    "cyx": "cypress open"
   },
   "devDependencies": {
     "@cypress/browserify-preprocessor": "3.0.1",

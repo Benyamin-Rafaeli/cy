@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 import { loginPage } from './../pages/OSLoginPage.js'
-import '@percy/cypress';
+import '@percy/cypress'
 
 // todo: how to pass variable to test from CLI
 describe('Test opensourcecms', () => {
@@ -32,9 +32,4 @@ describe('Test opensourcecms', () => {
         cy.percySnapshot('After')
     })
 
-    // it('Perform login validation', () => {
-    //     cy.fixture('opensourcecms').as('user')
-    //     cy.get('@user').then(user => { cy.login(user.UserName, user.Password) })
-    //     cy.get('#option-menu').text().as('Welcome Admin')
-    // })
 })

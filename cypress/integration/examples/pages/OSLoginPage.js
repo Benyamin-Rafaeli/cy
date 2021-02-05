@@ -8,7 +8,6 @@ export class OSLoginPage {
             cy.get('#txtUsername').should('have.focus')
             // cy.get('#txtUsername').type(userName)
             // this is example with xpath
-            cy.xpath('.//*[@id="txtUsername"]').type(userName)
         } else {
             cy.get('#txtUsername').clear()
         }
@@ -22,7 +21,7 @@ export class OSLoginPage {
     }
 
     clickLoginButton() {
-        cy.get('#btnLogin').click({ force: true })
+        cy.get('#btnLogin').click({force: true})
     }
 
     verifyUiLoginMessage(message) {
@@ -34,8 +33,7 @@ export class OSLoginPage {
         // cy.get('#txtUsername').then(el => { return el.text() }).as('Username');
         // Short way of working with Promise (invoke)
         // cy.get('#txtUsername').invoke('text').as('Username')
-        const selector = cy.contains('Username') ? '#txtUsername' : '#txtPassword';
-        cy.get(selector).text().as(field)
+        const selector = cy.contains('Username') ? '#txtUsername' : '#txtPassword'
     }
 
     // it.only('should se arch "Contact" by "Company"', () => {
@@ -44,4 +42,4 @@ export class OSLoginPage {
     // })
 }
 
-export const loginPage = new OSLoginPage();
+export const loginPage = new OSLoginPage()

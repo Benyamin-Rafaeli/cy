@@ -1,5 +1,4 @@
-require('cypress-dark');
-require('cypress-xpath');
+require('cypress-dark')
 import './commands'
 
 Cypress.on('uncaught:exception', (err, runnable) => {

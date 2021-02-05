@@ -1,14 +1,15 @@
 {
   "env": {
-    "qa": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login",
-    "dev": "http://localhost:3000"
+    "qa": "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login"
   },
   "video": false,
-  "videosFolder": "cypress/videos",
-  "screenshotsFolder": "cypress/screenshots",
+  "videosFolder": "cypress/logs/videos",
+  "screenshotsFolder": "cypress/logs/screenshots",
   "defaultCommandTimeout": 10000,
   "pageLoadTimeout": 60000,
   "projectId": "4g6xfs",
   "ignoreTestFiles": "*.js_",
-  "testFiles": ["**/**.spec.js"]
+  "testFiles": [
+    "**/**.spec.js"
+  ]
 }
