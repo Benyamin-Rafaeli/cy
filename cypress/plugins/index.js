@@ -1,11 +1,9 @@
 const fs = require('fs-extra')
 const path = require('path')
-const cucumber = require('cypress-cucumber-preprocessor').default
 const percyHealthCheck = require('@percy/cypress/task')
 
 module.exports = (on, config) => {
   on('task', percyHealthCheck);
-  on('file:preprocessor', cucumber());
 
   const processConfigName = (envConfig) => {
     const file = envConfig.env.name || 'default'

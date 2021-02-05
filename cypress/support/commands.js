@@ -2,6 +2,7 @@ import '@percy/cypress'
 
 // extend functionality by lodash for scraping
 const _ = require('lodash')
+
 const commands = ['chunk', 'map', 'flatMap']
 _.each(commands, (fn) => {
     Cypress.Commands.add(fn, { prevSubject: true }, (...args) => {
@@ -17,8 +18,6 @@ Cypress.Commands.add('login', (userName, password) => {
 })
 
 Cypress.Commands.add('navigate', env => {
-
-    // console.log('-----------------/Users/benjamin/projects/private/cy/cypress/support/commands.js => ', env)
 
     let url
     switch (env) {

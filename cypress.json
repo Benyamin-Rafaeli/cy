@@ -10,12 +10,5 @@
   "pageLoadTimeout": 60000,
   "projectId": "4g6xfs",
   "ignoreTestFiles": "*.js_",
-  "testFiles": [
-    "**/**.spec.js",
-    "**/*.feature"
-  ],
-  "reporter": "cypress-multi-reporters",
-  "reporterOptions": {
-    "configFile": "reporterOpts.json"
-  }
+  "testFiles": ["**/**.spec.js"]
 }
