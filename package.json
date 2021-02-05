@@ -1,6 +1,9 @@
 {
+  "name": "cy",
+  "version": "1.0.0",
+  "main": "index.js",
   "author": "https://www.linkedin.com/in/benyaminrafaeli/",
-  "description": "cloned and customized cypress bootstrap",
+  "description": "cypress",
   "scripts": {
     "start": "npm run srv & npm run cy",
     "srv": "json-server db.json",
@@ -11,37 +14,7 @@
   "devDependencies": {
     "@cypress/browserify-preprocessor": "3.0.1",
     "@percy/cypress": "2.3.4",
-    "cypress": "5.6.0",
-    "cypress-cucumber-preprocessor": "2.5.5",
-    "cypress-dark": "1.7.14",
-    "cypress-multi-reporters": "1.4.0",
-    "cypress-xpath": "1.6.1",
-    "electron-rebuild": "2.3.4",
-    "mocha": "8.2.1",
-    "mocha-junit-reporter": "2.0.0",
-    "mochawesome": "5.0.0",
-    "mochawesome-merge": "4.2.0",
-    "mochawesome-report-generator": "5.1.0"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
-  },
-  "dependencies": {
-    "cypress-commands": "1.1.0",
-    "marge": "1.0.1",
-    "json-server": "0.16.3"
-  },
-  "name": "cy",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Benyamin-Rafaeli/cy.git"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Benyamin-Rafaeli/cy/issues"
-  },
-  "homepage": "https://github.com/Benyamin-Rafaeli/cy#readme"
+    "cypress": "6.4.0",
+    "cypress-dark": "1.7.14"
+  }
 }
